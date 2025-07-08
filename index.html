@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 colo>Pakistan Cities Image Gallery </h1>
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')"
+            style="background-color: rgb(0, 95, 0); color: rgb(255, 255, 255); border: 1px solid rgb(94, 94, 94); border-radius: 20px; ;">All</button>
+        <button onclick="filterImages('karachi')"
+            style="background-color: rgb(0, 95, 0); color: rgb(255, 255, 255); border: 1px solid rgb(94, 94, 94); border-radius: 20px; ">Karachi</button>
+        <button onclick="filterImages('Hyderabad')"
+            style="background-color: rgb(0, 95, 0); color: rgb(255, 255, 255); border: 1px solid rgb(94, 94, 94); border-radius: 20px; ">Hyderabad</button>
+        <button onclick="filterImages('Islamabad')"
+            style="background-color: rgb(0, 95, 0); color: rgb(255, 255, 255); border: 1px solid rgb(94, 94, 94); border-radius: 20px; ">Islamabad</button>
+        <button onclick="filterImages('Lahore')"
+            style="background-color: rgb(0, 95, 0); color: rgb(255, 255, 255); border: 1px solid rgb(94, 94, 94); border-radius: 20px; ">Lahore</button>
+    </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery" id="gallery">
+        <div class="gallery-item karachi"><img src="./images/v-hd-mazarequaid-karachi.jpg" alt="mazare quaid"
+                sizes="100px" onclick="openLightbox(this)" /></div>
+        <div class="gallery-item karachi"><img src="./images/31-1.jpg" alt="City 1" sizes="100px"
+                onclick="openLightbox(this)" />
+        </div>
+        <div class="gallery-item karachi"><img src="./images/karachi night.jpg" alt=""
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Hyderabad"><img src="./images/Old Campus.jpg" alt=""
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Hyderabad"><img src="./images/Eid gah.jpg" alt="" sizes="100px"
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Hyderabad"><img src="./images/station.jpg" alt="" sizes="100px"
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Islamabad"><img src="./images/islamabad masjid.jpeg" alt="" sizes="100px"
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Islamabad"><img src="./images/Centaurus-Towers.jpg" alt="" sizes="100px"
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Islamabad"><img src="./images/Monument-Islamabad-Pakistan.jpg" alt="" sizes="100px"
+                onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Lahore"><img src="./images/Minar-e-Pakistan-scaled.jpg" alt="" sizes="100px" onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Lahore"><img src="./images/Mosque.jpg" alt="" sizes="100px" onclick="openLightbox(this)" /></div>
+        <div class="gallery-item Lahore"><img src="./images/Lahore fort.jpg" alt="" sizes="100px" onclick="openLightbox(this)" /></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" />
+        <div class="nav-btns">
+            <button onclick="prevImage()">❮</button>
+            <button onclick="nextImage()">❯</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<marquee behavior="alternate" direction="" ><H2>Thanks for Visiting</H2></marquee>
+</html>
